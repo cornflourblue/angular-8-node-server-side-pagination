@@ -1,26 +1,14 @@
-<div class="card text-center m-3">
-    <h3 class="card-header">Angular 8 + Node - Server Side Pagination Example</h3>
-    <div class="card-body">
-        <div *ngFor="let item of pageOfItems">{{item.name}}</div>
-    </div>
-    <div class="card-footer pb-0 pt-3">
-        <ul *ngIf="pager.pages && pager.pages.length" class="pagination">
-            <li [ngClass]="{disabled:pager.currentPage === 1}" class="page-item first-item">
-                <a (click)="setPage(1)" class="page-link">First</a>
-            </li>
-            <li [ngClass]="{disabled:pager.currentPage === 1}" class="page-item previous-item">
-                <a (click)="setPage(pager.currentPage - 1)" class="page-link">Previous</a>
-            </li>
-            <li *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}"
-                class="page-item number-item">
-                <a (click)="setPage(page)" class="page-link">{{page}}</a>
-            </li>
-            <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}" class="page-item next-item">
-                <a (click)="setPage(pager.currentPage + 1)" class="page-link">Next</a>
-            </li>
-            <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}" class="page-item last-item">
-                <a (click)="setPage(pager.totalPages)" class="page-link">Last</a>
-            </li>
-        </ul>
-    </div>
+<!-- main app container -->
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+
+<!-- credits -->
+<div class="text-center mt-4">
+    <p>
+        <a href="https://jasonwatmore.com/post/2019/06/28/angular-8-node-server-side-pagination-tutorial-example" target="_top">Angular 8 + Node - Server Side Pagination Tutorial & Example</a>
+    </p>
+    <p>
+        <a href="https://jasonwatmore.com" target="_top">JasonWatmore.com</a>
+    </p>
 </div>
