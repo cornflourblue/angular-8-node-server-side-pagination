@@ -4,6 +4,7 @@
     "scripts": {
         "start": "webpack-dev-server --mode development --open"
     },
+    "license": "MIT",
     "dependencies": {
         "@angular/common": "^8.0.3",
         "@angular/compiler": "^8.0.3",

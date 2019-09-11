@@ -4,6 +4,7 @@
     "scripts": {
         "start": "nodemon server.js"
     },
+    "license": "MIT",
     "dependencies": {
         "body-parser": "^1.18.3",
         "cors": "^2.8.4",
